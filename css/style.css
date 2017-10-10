@@ -1,11 +1,11 @@
 html{background: 'backgrounds.jpg'}
 
 body{
-	padding-left: 12%;
-	padding-right: 20%;
+	padding-left: 10%;
+	padding-right:20%;
 }
 
-a{color: #ABCB89;}
+a{color: #ee8782;}
 
 nav{
   font-family: -serif ;
@@ -79,13 +79,8 @@ ol{
     cursor: pointer;
 }
 .parallax {
-    /* The image used */
     background-image: url("backgrounds.jpg");
-
-    /* Set a specific height */
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,22 +161,22 @@ ol{
 .dropdown:hover .dropbtn { background-color: #3e8e41;}
 
 #myDIV {
-    width: 140px;
-    background-color:#AED581;
+    width: 200px;
+    background-color:#ee8782;
+		color: white;
     margin: auto;
-    -webkit-animation: mymove 8s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 8s infinite;
+    -webkit-animation-name: mymove ;
+		-webkit-animation-duration: 8s;
+    animation-name: mymove ;
+		animation-duration: 8s;
 }
-
-/* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    50% {width: 600px;}
-
+   from {background-color: #efd1cf;}
+	 to {background-color: #ee8782;}
 }
-
-/* Standard syntax */
 @keyframes mymove {
-    50% {width: 600px;}
+	from {background-color: #efd1cf;}
+  to {background-color: #ee8782;}
 }
 
 div.gallery {
