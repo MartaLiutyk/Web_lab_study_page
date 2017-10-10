@@ -1,27 +1,27 @@
-html{background-color: #FAFAFA;}
+html{background: 'backgrounds.jpg'}
 
 body{
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 12%;
+	padding-right: 20%;
 }
 
 a{color: #ABCB89;}
 
 nav{
-  font-family: Arial, sans-serif ;
+  font-family: -serif ;
   text-align: center;
 }
 
 h1{
   text-align: center;
   font-size: 36px;
-  font-family: Arial , Helvetica, sans-serif;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
   color:#000000;
 }
 
 h2{
   text-align: left;
-  font-family:  Lisichka Comic;
+  font-family:  "Comic Sans MS", cursive, sans-serif  ;
   font-size: 24px;
   color:#212121;
 }
@@ -29,45 +29,45 @@ h2{
 h3{
   text-align: left ;
   font-size: 26px;
-  font-family: Lisichka Comic;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
   color: #212121;
 }
 h4{
   text-align: left;
   font-size: 22px;
-  font-family: Lisichka Comic;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
   color: #212121;
 }
 
 p{
   text-align: left;
-  font-family:Minion Pro;
+  font-family: "Comic Sans MS", cursive, sans-serif	 ;
   color:#212121;
   font-size: 22px;
 }
 
 ul{
   text-align:left;
-  font-family:Minion Pro;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
   font-size: 22px;
   color:#212121;
 }
 
 ol{
   text-align: left;
-  font-family:Minion Pro;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 22px;
   color:#212121;
 }
 
 .button{
     position: relative;
-    background-color: #AED581;
+    background-color: #ee8782;
     border-radius: none;
     font-size: 22px;
     margin: none;
     color: #F1F8E9;
-    font-family: Lisichka Comic;
+    font-family:  "Comic Sans MS", cursive, sans-serif ;
     padding: 14px;
     border: 1px;
     width: 160px;
@@ -78,14 +78,22 @@ ol{
     overflow: hidden;
     cursor: pointer;
 }
+.parallax {
+    /* The image used */
+    background-image: url("backgrounds.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .button1:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.container {
-    position: relative;
-    width: 75%;
 }
 
 .image {
@@ -113,12 +121,12 @@ ol{
 
 .dropbutton{
   position: relative;
-  background-color: #AED581;
+  background-color: #ee8782;
   border-radius: none;
   font-size: 22px;
   margin: none;
   color: #F1F8E9;
-  font-family: Lisichka Comic;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
   padding: 14px;
   border: 1px;
   width: 160px;
@@ -138,7 +146,7 @@ ol{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    font-family: Lisichka Comic;
+    font-family:  "Comic Sans MS", cursive, sans-serif ;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
