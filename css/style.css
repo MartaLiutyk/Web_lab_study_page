@@ -18,7 +18,15 @@ h1{
   font-family:  "Comic Sans MS", cursive, sans-serif ;
   color:#000000;
 }
-
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+		max-width: 960px;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
 h2{
   text-align: left;
   font-family:  "Comic Sans MS", cursive, sans-serif  ;
@@ -37,6 +45,13 @@ h4{
   font-size: 22px;
   font-family:  "Comic Sans MS", cursive, sans-serif ;
   color: #212121;
+}
+
+h6{
+  text-align: center;
+  font-size: 36px;
+  font-family:  "Comic Sans MS", cursive, sans-serif ;
+  color: white;
 }
 
 p{
@@ -88,7 +103,7 @@ ol{
 }
 
 .button1:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 6px 0 rgba(8,7,8,2.24), 0 2px 30px 0 rgba(0,0,0,0.24);
 }
 
 .image {
@@ -161,13 +176,13 @@ ol{
 .dropdown:hover .dropbtn { background-color: #3e8e41;}
 
 #myDIV {
-    width: 200px;
+    width: 800px;
     background-color:#ee8782;
 		color: white;
     margin: auto;
-    -webkit-animation-name: mymove ;
+    -webkit-animation-name: bounceIn ;
 		-webkit-animation-duration: 8s;
-    animation-name: mymove ;
+    animation-name: bounceIn ;
 		animation-duration: 8s;
 }
 @-webkit-keyframes mymove {
@@ -178,13 +193,27 @@ ol{
 	from {background-color: #efd1cf;}
   to {background-color: #ee8782;}
 }
-
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 div.gallery {
-    border: 1px solid #ccc;
+    padding: 3px ;
+		margin: 2px;
+		border: 2px solid white;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #eda6a3;
 }
 
 div.gallery img {
@@ -202,10 +231,8 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
     float: left;
     width: 24.99999%;
-}
 
 @media only screen and (max-width: 700px){
     .responsive {
