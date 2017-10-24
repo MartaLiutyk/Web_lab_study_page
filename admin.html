@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +19,7 @@
     <br></br>
   <div class="container">
     <div class="page-header">
-      <h1>КОНТАКТИ</h1>
+      <h1>АДМІН</h1>
     </div>
   </div>
 <br></br>
@@ -58,102 +59,35 @@
 	  </div>
 </nav>
 <br></br>
-
-<img src="contacts.jpeg" class="img-responsive" style="width:100%;height:100%;>
-<div class="container animated fadeIn">
-<br></br>
-    	<div class="col-sm-6">
-    		<form action="form.php" class="contact-form" method="post">
-		      </div>
-     		</form>
-    	</div>
-    </div>
-<br></br>
-
-  <div class="container second-portion">
-	<div class="row">
-        <!-- Boxes de Acoes -->
-    	<div class="col-xs-12 col-sm-6 col-lg-4">
-			<div class="box">
-				<div class="icon">
-					<div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">E-MAIL&WEBSITE</h3>
-						<p>
-              <br>
-							<i class="fa fa-envelope" aria-hidden="true"></i> &nbsp melodika99@gmail.com
-
-							<br>
-							<i class="fa fa-globe" aria-hidden="true"></i> &nbsp symon.neon.org.ua
-						</p>
-
-					</div>
+  <div class = container>
+		<center><h2>Додати новину</h2></center>
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+				    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+				    <small id="fileHelp" class="form-text text-muted">Вибрати фото статті.</small>
 				</div>
-				<div class="space"></div>
 			</div>
-		</div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-4">
-			<div class="box">
-				<div class="icon">
-					<div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">CALL US</h3>
-    					<p>
-                <br>
-							<i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+380)967726547
-							<br>
-							<i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+380)638202399
-						</p>
-					</div>
+			<div class="col">
+				<div class="form-group">
+					<input class="form-control" type="text" id="example-text-input" placeholder="Заголовок...">
+					<br>
+					<textarea class="form-control" rows="5" id="exampleTextarea" placeholder="Стаття..."></textarea>
 				</div>
-				<div class="space"></div>
-			</div>
-		</div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-4">
-			<div class="box">
-				<div class="icon">
-					<div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-					<div class="info">
-						<h3 class="title">ADDRESS</h3>
-    					<p>
-							 <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp
-							 Lviv Polytechnic, campus 5
-						</p>
-					</div>
-				</div>
-				<div class="space"></div>
+				<button class="btn btn-primary float-right" type="submit">Відправити</button>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<br></br>
-<div id="map" style="width:100%;height:200px;background:yellow"></div>
+<br></br><dr></br><br></br><br></br>
+        <footer>
+          <p>&copy; Marta Liutyk </p>
+        </footer>
+      </div> <!-- /container -->
 
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-</script>
-<br></br>
 
-      <footer>
-        <p>&copy; Marta Liutyk </p>
-      </footer>
-    </div> <!-- /container -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>
