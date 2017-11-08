@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html manifest="manifest.cache">
   <head>
     <title>ІТ в цивільному процесі</title>
 
         <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
       <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/bootstrap.min.css" rel="stylesheet">
+
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
       <link href="css/style.css" rel="stylesheet" type="text/css">
-      <link href="css/bootstrap-theme.css" rel="stylesheet" />
+
       <script src="js/bootstrap.min.js"></script>
+      <script src="admin.js"></script>
+      <script src="feedback.js"></script>
 
   <body style="padding-right=20%; padding-left=10%">
     <br></br>
-  <div class="container">
-    <div class="page-header">
-      <h1>ВІДГУКИ</h1>
+    <div class="container">
+      <div class="page-header">
+        <h1>ВІДГУКИ</h1>
+      </div>
     </div>
-  </div>
 <br></br>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
 	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,40 +61,56 @@
 </nav>
     <br></br>
 
-    	<div class = container>
-    		<div class = col-lg>
-    			<p>
-    				<span class="h2 pull-left">Яна Дідун</span>
-    				<span><i>25.10.2017, 20:00</i></span>
-    			</p>
-    			<p>
-          Найприємніше було усвідомити, що минулого року теми з tech stream звучали як якась позаземна мова, а вже цього купа технічних термінів мали під собою чималий грунт з практики. Коли доповіді слухаєш вже не просто з захопленням, а з розумінням. Так прийшло розуміння, що таки багато дав один рік на Програма "Інтернет речей" у НУЛП/Internet of Things
-          </p>
-    		</div>
-    		<hr>
-    		<div class = col-lg>
-    			<p>
-    				<span class="h2 pull-left">Оля Поліщук</span>
-    				<span><i>22.10.2017, 17:00</i></span>
-    			</p>
-    			<p>
-          Чи доводилося вам бачити дуб у стані стресу, або дельфіна, який перебуває в похмурому настрої, жабу, яка страждає заниженою самооцінкою, кішку, яка не може розслабитися, або птицю, обтяжену образою? Повчіться у них умінню миритися з цим.
-          	</p>
-    		</div>
+    <div class="container">
 
-    		<div class="form-group">
-    			<textarea class="form-control" rows="5" id="comment" placeholder = "Новий відгук..."></textarea>
+
+    		<div id="reviews-list">
+
+    			<div class="container card">
+    				<br>
+    				<span class="review-author">Вася Пупкін</span>
+    				<span class="review-date">11.11.2017, 14:00</span>
+    				<p>
+    					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus eget ipsum nec vulputate.
+    					Sed vestibulum augue vel dictum imperdiet. Duis sed augue posuere, tempus diam vitae, efficitur
+    					ligula. Ut nec neque condimentum, vehicula ligula bibendum, bibendum lacus. Maecenas consectetur
+    					hendrerit laoreet. Donec massa nunc, mattis ut auctor non, lobortis a mauris. Donec commodo, ex eget
+    					gravida ornare, leo eros egestas mauris, nec pulvinar ipsum turpis eu urna. Donec suscipit purus
+    					velit, sit amet vehicula erat consequat ac. Donec pretium mattis justo, eu finibus dolor scelerisque
+    					non. Fusce risus ipsum, lobortis in maximus ut, tincidunt sit amet lacus. Nullam efficitur lectus at
+    					mauris gravida, in tristique quam faucibus. Etiam sagittis cursus lorem, eu dapibus nisi accumsan a.
+    					Sed ultricies felis ut tortor blandit tempor.
+    				</p><br>
+    			</div>
+
+
     		</div>
-    		<button class="btn btn-primary float-right" type="submit">Відправити</button>
+<br></br>
+    		<form class="container card" id="form">
+          <br></br>
+    			<h4>Новий відгук</h4>
+          <br></br>
+    			<div class="form-group">
+    				<div class="col-xs-12">
+    					<input id="name" type="text" class="form-control" placeholder="Прізвище та ім'я'">
+    				</div>
+    				<br><br>
+    				<div class="col-xs-12">
+    					<textarea id="text" class="form-control" rows="7" placeholder="Ваш відгук"></textarea>
+    					<br>
+    					<input type="button" value="Надіслати" class="btn btn-primary" onclick="addReview()">
+    				</div>
+    			</div>
+    		</form>
+
     	</div>
-      <br></br>
 
 
 
       <footer>
         <p>&copy; Marta Liutyk </p>
       </footer>
-    </div> <!-- /container -->
+    </div>
 
 
     <!-- Bootstrap core JavaScript
