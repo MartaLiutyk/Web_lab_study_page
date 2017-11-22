@@ -12,9 +12,14 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
       <link href="css/style.css" rel="stylesheet" type="text/css">
 
-      <script src="js/bootstrap.min.js"></script>
-      <script src="admin.js"></script>
-      <script src="feedback.js"></script>
+      <script src="js/admin.js"></script>
+      <script src="js/indexeddb.js"></script>
+      <script src='js/jquery.min.js'></script>
+      <script src='js/scroolreveal.js'></script>
+      <script src='js/bootstrap.min.js'></script>
+      <script src='js/magnific-popup.js'></script>
+      <script src="js/admin.js"></script>
+      <script src="js/feedback.js"></script>
 
   <body style="padding-right=20%; padding-left=10%">
     <br></br>
@@ -86,24 +91,25 @@
 
     		</div>
 <br></br>
-    		<form class="container card" id="form">
-          <br></br>
-    			<h4>Новий відгук</h4>
-          <br></br>
-    			<div class="form-group">
-    				<div class="col-xs-12">
-    					<input id="name" type="text" class="form-control" placeholder="Прізвище та ім'я'">
-    				</div>
-    				<br><br>
-    				<div class="col-xs-12">
-    					<textarea id="text" class="form-control" rows="7" placeholder="Ваш відгук"></textarea>
-    					<br>
-    					<input type="button" value="Надіслати" class="btn btn-primary" onclick="addReview()">
-    				</div>
-    			</div>
-    		</form>
 
-    	</div>
+
+<form class="container card" id="form">
+<h4>Новий відгук</h4>
+<div class="form-group">
+<div class="col-xs-12">
+  <input id="name" type="text" class="form-control" placeholder="Прізвище Ім'я">
+</div>
+<br><br>
+<div class="col-xs-12">
+  <textarea id="text" class="form-control" rows="7" placeholder="Новий відгук..."></textarea>
+  <br>
+  <input type="button" value="Надіслати" class="btn btn-primary" onclick="addReview()">
+</div>
+</div>
+</form>
+
+</div>
+</div>
 
 
 
