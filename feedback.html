@@ -11,7 +11,7 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
       <link href="css/style.css" rel="stylesheet" type="text/css">
-
+      <script src="js/indexeddb.js"></script>
       <script src="js/admin.js"></script>
       <script src="js/indexeddb.js"></script>
       <script src='js/jquery.min.js'></script>
@@ -40,7 +40,7 @@
        <a class="nav-link" href="index.html">Головна</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="news_page.html">Новини</a>
+       <a class="nav-link" href="news.html">Новини</a>
      </li>
      <li class="nav-item dropdown">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -68,47 +68,33 @@
 
     <div class="container">
 
-
-    		<div id="reviews-list">
-
-    			<div class="container card">
+    		<div id="media">
+    			<div class="media-body">
     				<br>
     				<span class="review-author">Вася Пупкін</span>
-    				<span class="review-date">11.11.2017, 14:00</span>
-    				<p>
-    					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus eget ipsum nec vulputate.
+    				<span class="review-date">Wed Nov 05 2017 20:09:26 GMT+0200 (FLE Standard Time)</span>
+    				<br>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus eget ipsum nec vulputate.
     					Sed vestibulum augue vel dictum imperdiet. Duis sed augue posuere, tempus diam vitae, efficitur
     					ligula. Ut nec neque condimentum, vehicula ligula bibendum, bibendum lacus. Maecenas consectetur
-    					hendrerit laoreet. Donec massa nunc, mattis ut auctor non, lobortis a mauris. Donec commodo, ex eget
-    					gravida ornare, leo eros egestas mauris, nec pulvinar ipsum turpis eu urna. Donec suscipit purus
-    					velit, sit amet vehicula erat consequat ac. Donec pretium mattis justo, eu finibus dolor scelerisque
-    					non. Fusce risus ipsum, lobortis in maximus ut, tincidunt sit amet lacus. Nullam efficitur lectus at
-    					mauris gravida, in tristique quam faucibus. Etiam sagittis cursus lorem, eu dapibus nisi accumsan a.
-    					Sed ultricies felis ut tortor blandit tempor.
-    				</p><br>
-    			</div>
-
-
+    					hendrerit laoreet. Donec massa nunc, mattis ut auctor non, lobortis a mauris.</p>
+    				</div>
+    				<hr><br>
     		</div>
-<br></br>
 
+    		<h3>Залиште свій коментар:</h3><br>
 
-<form class="container card" id="form">
-<h4>Новий відгук</h4>
-<div class="form-group">
-<div class="col-xs-12">
-  <input id="name" type="text" class="form-control" placeholder="Прізвище Ім'я">
-</div>
-<br><br>
-<div class="col-xs-12">
-  <textarea id="text" class="form-control" rows="7" placeholder="Новий відгук..."></textarea>
-  <br>
-  <input type="button" value="Надіслати" class="btn btn-primary" onclick="addReview()">
-</div>
-</div>
-</form>
-
-</div>
+    		<form id="form">
+    				<div class="col-sm-12 form-group">
+    					<input id="name" type="text" class="form-control" placeholder="Прізвище, ім'я">
+    				</div>
+    				<div class="col-sm-12 form-group">
+    					<textarea id="text" class="form-control" rows="7" placeholder="Новий відгук..."></textarea>
+    					<br>
+    					<input type="button" value="Надіслати" class="btn pull-right" onclick="addReview()">
+    				</div>
+    		</form>
+    </div>
 </div>
 
 

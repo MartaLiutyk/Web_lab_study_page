@@ -1,9 +1,7 @@
-
-
 window.addEventListener('load', function () {
     function updateOnlineStatus(event) {
         if (isOnline()) {
-            readOfflineReview();
+            readOfflineComments();
         }
     }
 
@@ -22,46 +20,48 @@ function addReview() {
         alert('Заповніть всі поля');
         return false;
     }
-    if (isOnline()) {
+
+    if (isOnline()){
+
         var date = new Date;
         var author = document.getElementById('name').value;
         var text = document.getElementById('text').value;
-        var parentElem = document.getElementById('reviews-list');
+        var parentElem = document.getElementById('media');
         var out = document.createElement('div');
-        out.id = 'review';
+        out.id = 'reviews';
         out.innerHTML =
-            "<div class='container card'><br>" +
+            "<div class='media-body'>" +
             "   <span class='review-author'>" + author + "</span>" +
             "   <span class='review-date'>" + date + "</span>" +
-            "   <p><br>" + text + "</p><br></div>";
+            "   <p><br>" + text + "</p></div><hr><br>";
         parentElem.appendChild(out);
         document.getElementById('form').reset();
-    } else {
-        if (useLocalStorage) {
-            var date = new Date;
-            var author = document.getElementById('name').value;
-            var text = document.getElementById('text').value;
-            i++;
-            var list = [];
-            list.push({"name": author, "text": text, "date": date});
-            localStorage.setItem('r' + i, JSON.stringify(list));
-        } else {
-            var transaction = db.transaction(["reviews"], "readwrite");
-            var store = transaction.objectStore("reviews");
-            var review = {
-                message: document.getElementById('text').value,
-                author: document.getElementById('name').value,
-                time: new Date
-            };
-            store.add(review);
-            console.log("sosoososos")
-        }
+      } else {
+            if (useLocalStorage) {
+                var date = new Date;
+                var author = document.getElementById('name').value;
+                var text = document.getElementById('text').value;
+                i++;
+                var list = [];
+                list.push({"name": author, "text": text, "date": date});
+                localStorage.setItem('r' + i, JSON.stringify(list));
+            } else {
+                var transaction = db.transaction(["reviews"], "readwrite");
+                var store = transaction.objectStore("reviews");
+                var review = {
+                    message: document.getElementById('text').value,
+                    author: document.getElementById('name').value,
+                    time: new Date
+                };
+                store.add(review);
+                console.log("sosoososos")
+            }
         document.getElementById('form').reset();
     }
 }
 
-function readOfflineReview() {
-    if (useLocalStorage) {
+function readOfflineComments() {
+  if (useLocalStorage) {
         len = localStorage.length + 1;
         for (var k = 1; k < len; k++) {
             review = JSON.parse(localStorage.getItem('r' + k));

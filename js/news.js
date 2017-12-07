@@ -1,4 +1,3 @@
-
 window.addEventListener('load', function () {
     function updateOnlineStatus(event) {
         if (isOnline()) {
@@ -15,7 +14,7 @@ function isOnline() {
 }
 
 function readOfflineNews() {
-    if (useLocalStorage) {
+  if (useLocalStorage) {
         len = localStorage.length + 1;
         for (var k = 1; k < len; k++) {
             news = JSON.parse(localStorage.getItem('n' + k));
@@ -41,7 +40,7 @@ function readOfflineNews() {
             var cursor = e.target.result;
             if (cursor) {
                 cursor.continue();
-                var parentElem = document.getElementById('news-list');
+                 var parentElem = document.getElementById('news-list');
                 var out = document.createElement('div');
                 out.id = 'news';
                 out.innerHTML =
