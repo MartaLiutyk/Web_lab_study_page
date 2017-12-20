@@ -1,0 +1,30 @@
+{
+  "name": "file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartaLiutyk/Web_lab_study_page.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Marta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartaLiutyk/Web_lab_study_page/issues"
+  },
+  "homepage": "https://github.com/MartaLiutyk/Web_lab_study_page#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.0"
+  }
+}
